@@ -7,16 +7,10 @@
 [Script]
 # > 百度贴吧 (tieba.baidu.com)
 百度贴吧 = type=http-request, pattern=^https?:\/\/tieba\.baidu\.com\/?.?, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.cookie.js
-# > 微博 (pi.weibo.cn)
-微博 = type=http-request, pattern=https:\/\/api\.weibo\.cn\/\d\/video\/machine\?gsid, script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
-# > 微博钱包 (pay.sc.weibo.com)
-微博钱包 = type=http-request, pattern=https:\/\/pay\.sc\.weibo\.com\/aj\/mobile\/home\/welfare\/signin\/do\?, script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
-# > 饿了么 (h5.ele.me)
-饿了么 = type=http-request, pattern=^https:\/\/h5\.ele\.me\/restapi\/eus\/v\d\/current_user$, script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemGetCookies.js
 # > 滴滴出行 (as.xiaojukeji.com)
 滴滴出行 = type=http-request, pattern= ^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\?, script-path= https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
 # > 奈雪的茶 (webapi.qmai.cn)
 奈雪的茶 = type=http-request, pattern=^https:\/\/webapi\.qmai\.cn\/web\/cy\/v\d\/store\/template-scene, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Naixue/Naixue.js
 
 [MITM]
-hostname = %APPEND% tieba.baidu.com, pi.weibo.cn, pay.sc.weibo.com, h5.ele.me, as.xiaojukeji.com, webapi.qmai.cn
+hostname = %APPEND% tieba.baidu.com, as.xiaojukeji.com, webapi.qmai.cn
