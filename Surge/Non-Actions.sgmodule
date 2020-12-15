@@ -19,11 +19,7 @@
 # >>>>> 宠汪汪兑换京豆 {08:00 16:00}
 宠汪汪——京豆 = type=cron, cronexp="0 0 8,16 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_reward.js
 
-# >>> 宠汪汪系列
-# >>>>> 偷粮 {00:59 05:59}
-宠汪汪——偷粮 = type=cron,cronexp="55 59 0,5 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_steal.js
-# >>>>> 喂食
-# >>> 早餐{06:00-10:30} 午餐{11:30-15:00} 晚餐{19:00-21:00}
+# >>> 宠汪汪 {06:00-10:30} 午餐{11:30-15:00} 晚餐{19:00-21:00}
 宠汪汪——首次 = type=cron, cronexp="0 30 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy.js
 宠汪汪——起床 = type=cron, cronexp="0 51 5 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_feedPets.js
 宠汪汪——早餐 = type=cron, cronexp="0 54 8 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy.js
