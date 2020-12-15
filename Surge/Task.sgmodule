@@ -30,4 +30,3 @@
 # > 互助码
 互助码——Chiupam = type=cron,cronexp="0 0 6 1,10,20 * *", wake-system=1, timeout=180, script-path=ShareCode_Chiupam.js
 互助码——Vivi = type=cron,cronexp="30 0 6 1,10,20 * *", wake-system=1, timeout=180, script-path=ShareCode_Vivi.js
-互助码——Chiupam98 = type=cron,cronexp="0 1 6 1,10,20 * *", wake-system=1, timeout=180, script-path=ShareCode_Chiupam98.js
