@@ -23,13 +23,13 @@ sudo yum makecache fast
 sudo yum install docker-ce
 ```
 
-6. 顺带
+6. 顺带(防后面报错)
 
 `npm install got`
 
 ## 第二步: 创建容器
 
-在此笔记中 Docker 的安装位置为 /usr/docker/ (可改)
+以下代码中 Docker 安装位置为 /usr/docker/ 
 
 ```
 docker run -dit \
@@ -43,13 +43,17 @@ docker run -dit \
 evinedeng/jd:github
 ```
 
-## 第三步: 查看创建日志
+## 第三步: 启动 Docker 服务
+
+`service docker start`
+
+## 第四步: 查看创建日志
 
 `docker logs -f jd`
 
 > 直到出现容器启动成功...字样才代表启动成功, 按 Ctrl+C 退出查看日志
 
-## 第四步: 编辑文件
+## 第五步: 编辑文件
 
 ```
 cd /usr/docker/jd/config
