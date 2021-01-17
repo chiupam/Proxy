@@ -29,7 +29,7 @@ sudo yum install docker-ce
 
 ## 第二步: 创建容器
 
-以下代码中 Docker 此笔记安装位置为 /usr/docker/ 
+在此笔记中 Docker 的安装位置为 /usr/docker/ 
 
 ```
 docker run -dit \
