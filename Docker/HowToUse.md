@@ -23,6 +23,10 @@ sudo yum makecache fast
 sudo yum install docker-ce
 ```
 
+6. 顺带
+
+`npm install got`
+
 ## 第二步: 创建容器
 
 以下代码中 Docker 安装位置为 /usr/docker/ 
