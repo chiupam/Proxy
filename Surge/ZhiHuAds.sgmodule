@@ -6,14 +6,15 @@
 # > RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_remove_ads.list, REJECT
 
 [Rule]
-# > 知乎广告拦截
+# > 知乎去广告
 DOMAIN,118.89.204.198,REJECT-DROP
 DOMAIN-KEYWORD,118.89.204.198,REJECT-DROP
 IP-CIDR,118.89.204.198/32,REJECT-DROP,no-resolve
 DOMAIN,appcloud2.in.zhihu.com,REJECT
+DOMAIN,mqtt.zhihu.com,REJECT
+DOMAIN,sugar.zhihu.com,REJECT
 USER-AGENT,AVOS*,REJECT
 URL-REGEX,^https?:\/\/api\.zhihu\.com\/(notifications\/v\d\/count|v\d\/package|me\/guides|drama\/living-info|ad|fringe|commercial|market\/popovers|search\/(top|tab)|.*featured-comment-ad),REJECT
-
 # > 拦截知乎回答下的广告
 URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations,REJECT
 # > 知乎拦截部分预加载
@@ -26,7 +27,7 @@ URL-REGEX,^https?:\/\/zhuanlan\.zhihu\.com\/api\/articles\/\d+\/recommendation,R
 
 [Map Local]
 # > 知乎去除最常访问
-^https?:\/\/api\.zhihu\.com\/moments\/recent data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank.json"
+^https?:\/\/api\.zhihu\.com\/moments\/recent data="https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/blank/blank_dict.json"
 
 [Script]
 知乎(处理用户信息) = type=http-response, requires-body=1, max-size=0, pattern=^https?:\/\/api\.zhihu\.com\/people\/, script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js
