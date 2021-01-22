@@ -26,7 +26,7 @@
 
 - [x] ~~[添加 shylocks 京东脚本](https://github.com/chiupam/Proxy/blob/individual/Docker/Diy.sh.md)~~
 
-  - 上面这个笔记就不推荐看了, 因为 git_pull 时会自动把 shylocks 的脚本添加进 crontab.list 文件里面了
+  - git_pull 时会把 shylocks 的脚本添加进 crontab.list 文件
   
 - [x] [多容器并发](https://github.com/chiupam/Proxy/blob/individual/Docker/DockerTwo.md)
 
