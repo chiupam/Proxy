@@ -8,6 +8,10 @@
 
 ### 产看创建日志
 
+`docker logs -f <容器名>`
+
+即
+
 `docker logs -f jd`
 
 ### 查看所有容器情况
