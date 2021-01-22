@@ -1,6 +1,12 @@
-## Docker 部署笔记
+<h1 align="center">
+  Docker 部署笔记
+  <br>
+  Author: Chiupam
+</h1>
 
-1. 服务器: [AliCloud 轻量应用服务器](https://www.aliyun.com/product/swas)
+### 基本信息
+
+1. 服务器: [Alibaba Cloud Elastic Computer Service](https://www.aliyun.com/product/swas)
 
 2. 用户类型: 开发者成长计划
 
@@ -12,14 +18,14 @@
 
 6. 部署时间: 2021-02-17 21:30
 
-### 基础部署
+### 笔记
 
-[HowToUse.md](https://github.com/YamTian/Network/blob/master/Docker/HowToUse.md)
+- [x] [基本部署并执行](https://github.com/chiupam/Proxy/blob/individual/Docker/DockerOne.md)
 
-### 其它问题
+- [x] [其它问题](https://github.com/chiupam/Proxy/blob/individual/Docker/OtherScript.md)
 
-[Other.md](https://github.com/YamTian/Network/blob/master/Docker/Other.md)
+- [x] ~~[添加 shylocks 京东脚本](https://github.com/chiupam/Proxy/blob/individual/Docker/Diy.sh.md)~~(已整合到 LXK 库)
 
-### 添加 shylocks 京东脚本
+- [x] [多容器并发](https://github.com/chiupam/Proxy/blob/individual/Docker/DockerTwo.md)
 
-[Diy.sh.md](https://github.com/YamTian/Network/blob/master/Docker/Diy.sh.md)
+- [x] [基本命令查询](https://github.com/chiupam/Proxy/blob/individual/Docker/Command.md)
