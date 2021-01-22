@@ -38,7 +38,11 @@ docker rm -f jd
 
 ### 重置控制面板用户名和密码
 
-`docker exec -it jd2 bash jd resetpwd`
+`docker exec -it <容器名> bash <容器名> resetpwd`
+
+即
+
+`docker exec -it jd bash jd resetpwd`
 
 ### 手动拉取脚本
 
